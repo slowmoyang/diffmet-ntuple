@@ -1,0 +1,11 @@
+name: diffmet-ntuple-py311
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy
+  - awkward
+  - uproot
+  - h5py
+  - tqdm
+  - ipykernel
