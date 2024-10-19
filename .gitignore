@@ -188,3 +188,6 @@ pyrightconfig.json
 # End of https://www.toptal.com/developers/gitignore/api/python,root
 
 logs/
+*.h5
+*.hdf5
+*.root
