@@ -211,7 +211,7 @@ def run(
             output['track_px'][slicing] = track_pt * np.cos(track_phi)
             output['track_py'][slicing] = track_pt * np.sin(track_phi)
 
-            for suffix in ['eta', 'is_reco_pu', 'charge']:
+            for suffix in ['eta', 'd0', 'dz', 'is_reco_pu', 'charge']:
                 key = f'track_{suffix}'
                 output[key][slicing] = chunk[key] # type: ignore
 
