@@ -15,9 +15,11 @@ echo "CWD: $(pwd)"
 echo "dataset=$dataset"
 echo "counter=$counter"
 
+# TODO: check if variables are not empty
+
 micromamba shell hook --shell fish | source
 micromamba activate diffmet-ntuple-py311
 
-./ntupleise.py batch -d $dataset -c $counter
+./run.py batch -d $dataset -c $counter
 
 echo "END: $(date)"
