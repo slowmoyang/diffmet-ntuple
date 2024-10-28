@@ -29,7 +29,7 @@ def run(
         if len(result.stderr) > 0:
             raise RuntimeError(result.stderr)
 
-        print(result.stdout)
+        print(result.stdout.decode('utf-'))
         print('-' * 80)
 
 
